@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saumya Sharma</title>
+    <title>MY PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="portStyle.css">
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <header>
         <div class="navbar">
-            <div class="main">Saumya</div>
+            <div class="main">Saumya Sharma</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -27,10 +33,11 @@
     <section id="home">
         <div class="hero">
             <p>Hey There,</p>
-            <p>I'm <span>Saumya</span>.</p>
+            <p>I'm <span>Saumya</span>👋</p>
             <p id="para"> A Passionate Learner and a Creative Developer.<br>A tech enthusiast focused on learning Data
-                Structures and Algorithms (DSA) while enhancing <br>my problem-solving skills.</p>
-            <a href="mailto:saumyasharma205ss@gmail.com" class="btn">saumyasharma205ss@gmail.com</a>
+                Structures and Algorithms (DSA) while enhancing <br>my problem-solving skills.</p><br>
+            <a href="mailto:saumyasharma205ss@gmail.com" class="btn"><i class="fa-solid fa-envelope"></i>
+                saumyasharma205ss@gmail.com </a>
             <div class="infologo">
                 <a href="https://github.com/Saumyasharma02"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/saumyasharma02"><i class="fa-brands fa-linkedin"></i></a>
@@ -42,14 +49,116 @@
         <div class="image-container"></div>
     </section>
 
+    <!-- SECTION 1: Hero -->
+    <section id="about">
+        <h2>About Me</h2><br>
+        <div class="intro">
+            <p>I am a pre-final year BTech student with a strong passion for Full Stack Development, Machine Learning,
+                and Problem-Solving. My technical expertise spans building scalable web applications, developing
+                intelligent predictive models, and solving complex algorithmic challenges.
 
+                I have solved more than 250 LeetCode problems, focusing on dynamic programming, system design, and
+                algorithmic optimization. My problem-solving skills are complemented by a strong understanding of data
+                structures, algorithms, and competitive programming techniques.I thrive in collaborative environments,
+                constantly seek to expand my knowledge, and am committed to
+                solving real-world challenges using technology. My goal is to leverage Full Stack Development and
+                Machine Learning to create innovative, intelligent, and impactful solutions that enhance user
+                experiences.
+            </p>
+        </div>
+    </section>
 
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="cells">
+            <div class="cell">
+                <img src="mern.png" alt="mern stack">
+                <span>MERN</span>
+            </div>
+            <div class="cell">
+                <img src="html.jpeg" alt="html logo">
+                <span>HTML</span>
+            </div>
 
+            <div class="cell">
+                <img src="css.jpeg" alt="css logo">
+                <span>CSS</span>
+            </div>
 
+            <div class="cell">
+                <img src="javascript.jpeg" alt="javascript logo">
+                <span>JavaScript</span>
+            </div>
+
+            <div class="cell">
+                <img src="tailwind.jpeg" alt="tailwind logo">
+                <span>Tailwind CSS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Projects -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <div class="group">
+            <div class="p1">
+                <img src="">
+                <p>Lung Tumor Detection Using Machine Learning</p>
+
+            </div>
+
+            <div class="text">
+            </div>
+            <div class="p1">
+                <img src="">
+                <p>Heart Disease Prediction</p>
+
+            </div>
+
+            <div class="text">
+            </div>
+            <div class="p1">
+                <img src="">
+                <p>Hate Speech Detection(Using NLP)</p>
+
+            </div>
+
+            <div class="text">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+
+        <div class="group">
+            <div class="text">
+                
+            </div>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Saumya Sharma. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
