@@ -163,7 +163,7 @@ section {
   width: 30%;
   height: 90%;
   border-radius: 50%;
-  background: url("Images\img.jpg") no-repeat center center;
+  background: url("Images/img.jpg") no-repeat center center;
   background-size: cover;
   transform: translateX(50px); /* Slide effect */
   animation: fadeInSlideLeft 1.5s ease-in-out forwards; /* Trigger animation */
