@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   border: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -14,12 +14,6 @@ header {
   z-index: 99;
   opacity: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
 
 .navbar {
@@ -169,7 +163,7 @@ section {
   width: 30%;
   height: 90%;
   border-radius: 50%;
-  background: url("img.jpg") no-repeat center center;
+  background: url("Images\img.jpg") no-repeat center center;
   background-size: cover;
   transform: translateX(50px); /* Slide effect */
   animation: fadeInSlideLeft 1.5s ease-in-out forwards; /* Trigger animation */
@@ -185,8 +179,160 @@ section {
     transform: translateX(0);
   }
 }
-/*next section*/
 
+/*next section*/
+#about h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.intro p {
+  font-size: 18px;
+  color: rgb(18, 18, 58);
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+.projects-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #4a76ee;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #4a76ee;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero p {
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero .image-container {
+    width: 300px;
+  }
+
+  /* SECTION 3: Projects */
+  .projects-section {
+    text-align: center;
+  }
+
+  .projects-section .group {
+    flex-direction: column;
+  }
+  /* SECTION 4: Contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /* NAVBAR */
+  header {
+    padding: 0 20px;
+  }
+  #home .image-container {
+    width: 100px;
+  }
+  /* SECTION 1: Hero */
+  .hero {
+    padding: 0 20px;
+  }
+
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+
+  /* SECTION 3: Projects */
+  .projects-section {
+    padding: 0 20px;
+  }
+
+  /* SECTION 4: Contact */
+  .contact-section {
+    padding: 0 20px;
+  }
+}
 footer {
   text-align: center;
   padding: 1rem 0;
