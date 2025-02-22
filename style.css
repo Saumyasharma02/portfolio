@@ -55,17 +55,17 @@ header {
   color: #0d2f3f;
   font-size: 1rem;
   text-transform: uppercase;
-  position: relative; /* Needed for positioning the `::after` pseudo-element */
+  position: relative;
 }
 .nav-links li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px; /* Adjust the distance from the text */
-  width: 0; /* Initially invisible (no underline) */
-  height: 2px; /* Thickness of the underline */
-  background: black; /* Color of the underline */
-  transition: 0.3s ease-in-out; /* Transition effect */
+  bottom: -6px; 
+  width: 0; 
+  height: 2px; 
+  background: black; 
+  transition: 0.3s ease-in-out; 
 }
 .nav-links li a:hover::after {
   width: 100%;
@@ -120,7 +120,7 @@ section {
 /*email*/
 .hero a {
   margin-top: 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }
 .btn {
   color: black;
@@ -158,15 +158,16 @@ section {
 }
 
 .image-container {
-  position: absolute;
-  right: 100px;
-  width: 30%;
-  height: 90%;
-  border-radius: 50%;
-  background: url("Images/img.jpg") no-repeat center center;
-  background-size: cover;
-  transform: translateX(50px); /* Slide effect */
-  animation: fadeInSlideLeft 1.5s ease-in-out forwards; /* Trigger animation */
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center;
+}
+.image-container .right-img {
+  width: 100%;
+  height: auto;
+  transform: translateX(50px); 
+  animation: fadeInSlideLeft 1.5s ease-in-out forwards; 
 }
 
 @keyframes fadeInSlideLeft {
@@ -177,6 +178,26 @@ section {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+/* Small screens */
+@media (max-width: 600px) {
+  .image-container {
+    transform: scale(1.1);
+  }
+}
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .image-container {
+    transform: scale(1.1);
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .image-container {
+    transform: scale(1.2);
   }
 }
 
@@ -226,6 +247,24 @@ section {
 .projects-section h2 {
   text-align: center;
   font-size: 35px;
+}
+
+.work{
+  display: flex;
+  gap: 55px;
+}
+.work .p1{
+  box-shadow: 2px 6px 20px rgb(229,229,229);
+  border-radius: 12px;
+  margin: 80px 0;
+  cursor: pointer;
+}
+.p1 img{
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
 }
 
 .contact-section h2 {
@@ -292,7 +331,7 @@ section {
     text-align: center;
   }
 
-  .projects-section .group {
+  .projects-section .work {
     flex-direction: column;
   }
   /* SECTION 4: Contact */
@@ -339,4 +378,3 @@ footer {
   background: #333;
   color: white;
 }
-
