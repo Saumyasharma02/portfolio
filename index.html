@@ -156,5 +156,19 @@
         <p>&copy; 2025 Saumya Sharma. All rights reserved.</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("ox7ZJApYFS0IbgAPi");
 
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_1306", "template_1306", this)
+                .then(function () {
+                    alert("Email sent successfully!");
+                }, function (error) {
+                    alert("Failed to send email. Error: " + JSON.stringify(error));
+                });
+        });
+    </script>
 </html>
